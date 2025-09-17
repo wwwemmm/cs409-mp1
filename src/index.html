@@ -4,10 +4,191 @@
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
+        <title>G.E.M.</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </head>
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
+    <!-- Top Navigation -->
+    <header class="site-header navbar-large">
+        <div class="container nav">
+            <nav class="nav__menu" aria-label="Primary">
+                <a href="#About" class="nav__link">About</a>
+                <a href="#Album" class="nav__link">Album</a>
+                <a href="#Tour" class="nav__link">Tour</a>
+                <a href="#Carousel" class="nav__link">Carousel</a>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <!-- About -->  
+        <section id="About" class="section About">
+            <video autoplay muted loop playsinline id="bg-video">
+                <source src="assets/video/Gloria.webm" type="video/mp4">
+            </video>
+            <div class="overlay">
+                <h1>G.E.M.</h1>
+                <p>Single-page project with HTML, SCSS, and JavaScript</p>
+            </div>
+        </section>
+
+
+        <!-- Albums Grid -->
+        <section id="Album" class="section Album">
+            <div class="container">
+                <h2 class="section__title"><i class="fas fa-compact-disc"></i> Album</h2>
+                <div class="grid">
+                    <div class="card" data-album="revelation" aria-label="Revelation Album">
+                        <img src="assets/album-revelation.jpg" alt="Revelation Album Cover" class="card__image">
+                    </div>
+                    <div class="card" data-album="cityzoo" aria-label="City Zoo Album">
+                        <img src="assets/album-CityZoo.jpg" alt="City Zoo Album Cover" class="card__image">
+                    </div>
+                    <div class="card" data-album="queeng" aria-label="Queen G Album">
+                        <img src="assets/album-QueenG.jpg" alt="Queen G Album Cover" class="card__image">
+                    </div>
+                    <div class="card" data-album="poisonapple" aria-label="Poison Apple Album">
+                        <img src="assets/album-PoisonApple.jpg" alt="Poison Apple Album Cover" class="card__image">
+                    </div>
+                    <div class="card" data-album="anotherfairytale" aria-label="Another Fairy Tale Album">
+                        <img src="assets/album-AnotherFairyTale.jpg" alt="Another Fairy Tale Album Cover" class="card__image">
+                    </div>
+                    <div class="card" data-album="heartbeat" aria-label="Heartbeat Album">
+                        <img src="assets/album-Heartbeat.jpg" alt="Heartbeat Album Cover" class="card__image">
+                    </div>
+                    <div class="card" data-album="xposed" aria-label="Xposed Album">
+                        <img src="assets/album-Xposed.jpg" alt="Xposed Album Cover" class="card__image">
+                    </div>
+                    <div class="card" data-album="mysecret" aria-label="My Secret Album">
+                        <img src="assets/album-MySecret.jpg" alt="My Secret Album Cover" class="card__image">
+                    </div>
+                    <div class="card" data-album="18" aria-label="18 Album">
+                        <img src="assets/album-18.jpg" alt="18 Album Cover" class="card__image">
+                    </div>
+                    <div class="card" data-album="gem" aria-label="GEM Album">
+                        <img src="assets/album-GEM.jpg" alt="GEM Album Cover" class="card__image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tour Section -->
+        <section id="Tour" class="section Tour">
+            <div class="container">
+                <h2 class="section__title"><i class="fas fa-map-marker-alt"></i> Tour</h2>
+                <div class="tour-dates">
+                    <div class="tour-date">
+                        <div class="date">Aug 15–20</div>
+                        <div class="city">Hong Kong</div>
+                    </div>
+                    <div class="tour-date">
+                        <div class="date">Aug 29 – Sep 21</div>
+                        <div class="city">Shanghai</div>
+                    </div>
+                    <div class="tour-date">
+                        <div class="date">Oct 17–19</div>
+                        <div class="city">Chengdu</div>
+                    </div>
+                    <div class="tour-date">
+                        <div class="date">Oct 25–26</div>
+                        <div class="city">Xuzhou</div>
+                    </div>
+                    <div class="tour-date">
+                        <div class="date">Nov 1–2</div>
+                        <div class="city">Wuhan</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carousel Section -->
+        <section id="Carousel" class="section Carousel">
+            <div class="container">
+                <h2 class="section__title"><i class="fas fa-microphone"></i> Music Show</h2>
+                <div class="carousel">
+                    <div class="carousel__container">
+                        <div class="carousel__track">
+                            <div class="carousel__slide active">
+                                <img src="assets/musicShow-singer.jpg" alt="Music Show Singer" class="carousel__image">
+                                <div class="carousel__content">
+                                    <h3>Live Performance</h3>
+                                    <p>Experience G.E.M.'s powerful vocals in concert</p>
+                                </div>
+                            </div>
+                            <div class="carousel__slide">
+                                <img src="assets/musicShow-rap.avif" alt="Music Show Rap" class="carousel__image">
+                                <div class="carousel__content">
+                                    <h3>Rap Performance</h3>
+                                    <p>Witness G.E.M.'s dynamic rap skills on stage</p>
+                                </div>
+                            </div>
+                            <div class="carousel__slide">
+                                <img src="assets/musicShow-time.jpg" alt="Music Show Time" class="carousel__image">
+                                <div class="carousel__content">
+                                    <h3>Time Performance</h3>
+                                    <p>Enjoy timeless melodies in a spectacular show</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel__nav carousel__nav--prev" aria-label="Previous slide">
+                        <span>&#8249;</span>
+                    </button>
+                    <button class="carousel__nav carousel__nav--next" aria-label="Next slide">
+                        <span>&#8250;</span>
+                    </button>
+                    <div class="carousel__indicators">
+                        <button class="carousel__indicator active" data-slide="0" aria-label="Go to slide 1"></button>
+                        <button class="carousel__indicator" data-slide="1" aria-label="Go to slide 2"></button>
+                        <button class="carousel__indicator" data-slide="2" aria-label="Go to slide 3"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://www.youtube.com/c/gem0816" target="_blank" rel="noopener noreferrer" class="social-link youtube" aria-label="GEM's YouTube Channel">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/gem0816/" target="_blank" rel="noopener noreferrer" class="social-link instagram" aria-label="GEM's Instagram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="https://x.com/gemoving?s=21&t=5F6gGJEOvDokoWmQX1AZ3g" target="_blank" rel="noopener noreferrer" class="social-link twitter" aria-label="GEM's Twitter">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="copyright">© G.E.M. 2025</div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Album Modal -->
+    <div id="albumModal" class="modal">
+        <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <div class="modal__header">
+                <img id="modalImage" src="assets/album-revelation.jpg" alt="Album Cover" class="modal__image">
+                <div class="modal__info">
+                    <h2 id="modalTitle" class="modal__title"></h2>
+                    <p id="modalYear" class="modal__year"></p>
+                    <p id="modalDescription" class="modal__description"></p>
+                </div>
+            </div>
+            <div class="modal__body">
+                <h3>Track List</h3>
+                <ul id="modalTracks" class="modal__tracks"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
     </body>
 </html>
