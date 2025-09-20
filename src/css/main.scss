@@ -332,7 +332,19 @@ body {
 }
 
 .nav {
-    @include flex-center;
+    @include flex-between;
+}
+
+.nav__brand {
+    flex-shrink: 0;
+}
+
+.nav__brand-text {
+    color: $white;
+    font-size: $font-size-3xl;
+    font-weight: $font-weight-bold;
+    cursor: default;
+    user-select: none;
 }
 
 .nav__menu {
@@ -1032,6 +1044,16 @@ body {
         padding: 0 $spacing-base;
     }
     
+    .nav {
+        @include flex-column;
+        gap: $spacing-base;
+        text-align: center;
+    }
+    
+    .nav__brand-text {
+        font-size: $font-size-2xl;
+    }
+    
     .nav__menu {
         @include flex-column;
         gap: $spacing-base;
@@ -1094,6 +1116,10 @@ body {
 }
 
 @include respond-to(sm) {
+    .nav__brand-text {
+        font-size: $font-size-xl;
+    }
+    
     .section__title {
         font-size: $font-size-2xl;
     }
